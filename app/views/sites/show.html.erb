@@ -1,0 +1,11 @@
+
+<p>Book was successfully created.</p>
+
+<p>Title: <%= @site.title %> </p>
+<P>Body: <%= @site.body %> </P>
+
+<%# なぜ詳細ページのeditだけ＠がつくのか%>
+<p> <%= link_to "edit", edit_site_path(@site), class:"edit_#{@site}" %> | 
+<%= link_to "back", :back, class:"back"%> </p>
+
+
