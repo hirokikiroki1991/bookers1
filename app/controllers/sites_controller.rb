@@ -10,13 +10,10 @@ class SitesController < ApplicationController
   	@site = Site.find(params[:id])
   end
 
-
   def new
   	@site = Site.new
   	@sites = Site.all
   end
-
-
 
   def create
   	site = Site.new(site_params)

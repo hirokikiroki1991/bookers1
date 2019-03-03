@@ -21,7 +21,7 @@
 	<%#なぜ@siteじゃないのか？？ なぜclassを入れるのか%>
 <%= link_to "show", site_path(site.id),class:"show_#{site.id}" %>
 <%= link_to "edit", edit_site_path(site.id), class:"edit_#{site.id}" %>
-<%= link_to "destroy", site_path(site.id), method: :delete, class:"destroy_#{site.id}" %>
+<%= link_to "destroy", site_path(site.id), method: :delete, class:"destroy_#{site.id}",data: {confirm:'Are you sure?？'} %>
 
 </td>
 </tr>  

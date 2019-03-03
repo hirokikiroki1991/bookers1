@@ -5,7 +5,7 @@
 <P>Body: <%= @site.body %> </P>
 
 <%# なぜ詳細ページのeditだけ＠がつくのか%>
-<p> <%= link_to "edit", edit_site_path(@site), class:"edit_#{@site}" %> | 
+<p> <%= link_to "edit", edit_site_path(@site.id), class:"edit_#{@site.id}" %> | 
 <%= link_to "back", :back, class:"back"%> </p>
 
 
